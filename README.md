@@ -1,16 +1,16 @@
 
-# Dummy FreePMU
+# FreePMU WiFi
 
 This project is part of the FreePMU. It consistis in a ESP32 Module (ESP32 DevKitC) that connects to a WiFi network and implements the PMU communications as defined in IEEE Standard [C37.118.2-2011](//https://standards.ieee.org/ieee/C37.118.1/4902/).
 
-The Dummy FreePMU send randon phasor data at a rate of 30 phasors per second. The phasors sent are the same of the FreePMU:
+In it current version, the FreePMU WiFi acts like a dummy PMU, sending randon phasor data at a rate of 30 phasors per second. The phasors sent are the same of the FreePMU:
 
 * 3 fundamental frquency voltage phasors (electrical phases R, S and T)
 * 10 harmonic phasors for each electrical phase.
 
-This Dummy FreePMU can be used to test communications infrastructure and the Phasor Data Concentrator (PDC).
+This dummy FreePMU can be used to test communications infrastructure and the Phasor Data Concentrator (PDC).
 
-The complementary objective is to use this module as a WiFi bridge for the microcontroler where the sychronized phasor estimation takes place.
+The main goal is to use this module as a WiFi bridge for the microcontroler where the sychronized phasor estimation actually takes place.
 
 ## Data Frame Organization
 
